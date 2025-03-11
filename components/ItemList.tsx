@@ -1,6 +1,6 @@
 import { Colors } from '@/constants/Colors';
-import { useColorScheme } from '@/hooks/useColorScheme.web';
-import { Task } from "@/hooks/useTask";
+import { useColorScheme } from '@/hooks/useColorScheme';
+import { Task } from "@/app/context/useTask";
 import { useThemeColor } from '@/hooks/useThemeColor';
 import React from "react";
 import { StyleSheet, Text, TouchableOpacity } from "react-native";

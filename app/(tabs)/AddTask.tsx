@@ -3,9 +3,9 @@ import { StyleSheet, Button, TextInput, View } from "react-native";
 import React, { useState } from "react";
 import { useNavigation } from "expo-router";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { useTasks } from "@/hooks/useTask";
+import { useTasks } from "@/app/context/useTask";
 import { Colors } from "@/constants/Colors";
-import { useColorScheme } from "@/hooks/useColorScheme.web";
+import { useColorScheme } from "@/hooks/useColorScheme";
 
 const AddTaskScreen: React.FC = () => {
   const navigation = useNavigation();

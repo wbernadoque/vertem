@@ -6,7 +6,7 @@ import {
 
 import { useNavigation } from "expo-router";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { useTasks } from "@/hooks/useTask";
+import { useTasks } from "@/app/context/useTask";
 import ItemList from "@/components/ItemList";
 
 export default function HomeScreen() {

@@ -1,50 +1,68 @@
-# Welcome to your Expo app 👋
+# Gerenciador de Tarefas - React Native com Expo
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Este é um aplicativo simples de gerenciamento de tarefas desenvolvido com **React Native** usando **Expo**.
 
-## Get started
+## 📌 Funcionalidades
+- Listar tarefas
+- Adicionar uma nova tarefa
+- Alterar o status de uma tarefa (pendente/concluído)
+- Remover todas as tarefas concluídas
 
-1. Install dependencies
+## 🚀 Instalação e Execução
 
-   ```bash
-   npm install
-   ```
+### 1️⃣ **Pré-requisitos**
+Antes de começar, certifique-se de ter instalado:
+- [Node.js](https://nodejs.org/)
+- [Expo CLI](https://docs.expo.dev/get-started/installation/)
 
-2. Start the app
-
-   ```bash
-    npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+Para instalar o Expo CLI, execute:
+```sh
+npm install -g expo-cli
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### 2️⃣ **Instale as Dependências**
+```sh
+npm install
+# ou
+yarn install
+```
 
-## Learn more
+### 3️⃣ **Executando o Aplicativo**
+Inicie o servidor do Expo:
+```sh
+npm start
+# ou
+yarn start
+```
+Isso abrirá o **Expo Developer Tools** no navegador.
 
-To learn more about developing your project with Expo, look at the following resources:
+### 4️⃣ **Executando no Dispositivo ou Emulador**
+- **No dispositivo físico**:
+  - Instale o app **Expo Go** ([Android](https://play.google.com/store/apps/details?id=host.exp.exponent) | [iOS](https://apps.apple.com/app/expo-go/id982107779))
+  - Escaneie o QR Code exibido no terminal ou no navegador
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+- **No emulador**:
+  - **Android**: Pressione `a` para abrir no Android Emulator
+  - **iOS**: Pressione `i` para abrir no iOS Simulator (apenas no macOS)
 
-## Join the community
+## 🛠 Tecnologias Utilizadas
+- **React Native** - Construção do app
+- **Expo** - Framework para desenvolvimento
+- **React Navigation** - Gerenciamento de navegação
+- **Context API** - Gerenciamento de estado
+- **AsyncStorage** - Armazenamento local de tarefas
 
-Join our community of developers creating universal apps.
+## 📂 Estrutura do Projeto
+```
+📂 app/
+ ├── 📂 components/      # Componentes reutilizáveis
+ ├── 📂 (tabs)/         # Telas do aplicativo
+ ├── 📂 context/         # Context API para gerenciamento de tarefas
+ ├── 📂 hooks/           # Hooks personalizados
+ ├── 📂 assets/           # Fontes e imagens
+ ├── _layout_.tsx            # Ponto de entrada do aplicativo
+```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+---
+✉️ **Dúvidas ou Sugestões?** Entre em contato!
+
